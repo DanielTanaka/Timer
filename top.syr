@@ -1,0 +1,516 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/RA00184038/Documents/teste/v1/divclock.vhd" in Library work.
+Architecture exemplo of Entity divclock is up to date.
+Compiling vhdl file "C:/Users/RA00184038/Documents/teste/v1/contador.vhd" in Library work.
+Architecture behavioral of Entity contador is up to date.
+Compiling vhdl file "C:/Users/RA00184038/Documents/teste/v1/registrador.vhd" in Library work.
+Architecture behavioral of Entity registrador is up to date.
+Compiling vhdl file "C:/Users/RA00184038/Documents/teste/v1/hex7seg.vhd" in Library work.
+Architecture exemplo of Entity hex7seg is up to date.
+Compiling vhdl file "C:/Users/RA00184038/Documents/teste/v1/unidControle.vhd" in Library work.
+Entity <unidcontrole> compiled.
+Entity <unidcontrole> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/RA00184038/Documents/teste/v1/fd.vhd" in Library work.
+Architecture arquitetura of Entity fd is up to date.
+Compiling vhdl file "C:/Users/RA00184038/Documents/teste/v1/top.vhd" in Library work.
+Architecture behavioral of Entity top is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <unidControle> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <fd> in library <work> (architecture <arquitetura>).
+
+Analyzing hierarchy for entity <divclock> in library <work> (architecture <exemplo>).
+
+Analyzing hierarchy for entity <contador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <registrador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <hex7seg> in library <work> (architecture <exemplo>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top> in library <work> (Architecture <behavioral>).
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <unidControle> in library <work> (Architecture <behavioral>).
+Entity <unidControle> analyzed. Unit <unidControle> generated.
+
+Analyzing Entity <fd> in library <work> (Architecture <arquitetura>).
+Entity <fd> analyzed. Unit <fd> generated.
+
+Analyzing Entity <divclock> in library <work> (Architecture <exemplo>).
+Entity <divclock> analyzed. Unit <divclock> generated.
+
+Analyzing Entity <contador> in library <work> (Architecture <behavioral>).
+Entity <contador> analyzed. Unit <contador> generated.
+
+Analyzing Entity <registrador> in library <work> (Architecture <behavioral>).
+Entity <registrador> analyzed. Unit <registrador> generated.
+
+Analyzing Entity <hex7seg> in library <work> (Architecture <exemplo>).
+Entity <hex7seg> analyzed. Unit <hex7seg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <unidControle>.
+    Related source file is "C:/Users/RA00184038/Documents/teste/v1/unidControle.vhd".
+    Found finite state machine <FSM_0> for signal <estado>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clock                     (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | inicial                                        |
+    | Power Up State     | inicial                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <unidControle> synthesized.
+
+
+Synthesizing Unit <divclock>.
+    Related source file is "C:/Users/RA00184038/Documents/teste/v1/divclock.vhd".
+    Found 25-bit up counter for signal <IQ>.
+    Found 1-bit register for signal <pivo>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <divclock> synthesized.
+
+
+Synthesizing Unit <contador>.
+    Related source file is "C:/Users/RA00184038/Documents/teste/v1/contador.vhd".
+    Found 1-bit register for signal <RCO>.
+    Found 4-bit up counter for signal <R>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <contador> synthesized.
+
+
+Synthesizing Unit <registrador>.
+    Related source file is "C:/Users/RA00184038/Documents/teste/v1/registrador.vhd".
+    Found 4-bit register for signal <Q>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <registrador> synthesized.
+
+
+Synthesizing Unit <hex7seg>.
+    Related source file is "C:/Users/RA00184038/Documents/teste/v1/hex7seg.vhd".
+    Found 16x7-bit ROM for signal <display>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <hex7seg> synthesized.
+
+
+Synthesizing Unit <fd>.
+    Related source file is "C:/Users/RA00184038/Documents/teste/v1/fd.vhd".
+WARNING:Xst:647 - Input <pulso> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <rco> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <fd> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "C:/Users/RA00184038/Documents/teste/v1/top.vhd".
+Unit <top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 2
+ 25-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 6
+ 1-bit register                                        : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <unidContr/estado/FSM> on signal <estado[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ inicial  | 00
+ contagem | 01
+ carrega  | 10
+----------------------
+WARNING:Xst:79 - Model 'fd' has different characteristics in destination library
+WARNING:Xst:80 - Model name has been changed to 'fd1'
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 2
+ 25-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <fluxoDados/contad/RCO> of sequential type is unconnected in block <top>.
+
+Optimizing unit <top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 36
+ Flip-Flops                                            : 36
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 130
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 24
+#      LUT2                        : 29
+#      LUT3                        : 1
+#      LUT4                        : 14
+#      MUXCY                       : 31
+#      VCC                         : 1
+#      XORCY                       : 25
+# FlipFlops/Latches                : 36
+#      FDC                         : 2
+#      FDCE                        : 34
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 2
+#      OBUF                        : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       39  out of    960     4%  
+ Number of Slice Flip Flops:             36  out of   1920     1%  
+ Number of 4 input LUTs:                 72  out of   1920     3%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of     83    12%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)      | Load  |
+-----------------------------------+----------------------------+-------+
+clock                              | BUFGP                      | 32    |
+fluxoDados/div/pivo                | NONE(fluxoDados/contad/R_0)| 4     |
+-----------------------------------+----------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 36    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.094ns (Maximum Frequency: 164.087MHz)
+   Minimum input arrival time before clock: 2.852ns
+   Maximum output required time after clock: 5.870ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 6.094ns (frequency: 164.087MHz)
+  Total number of paths / destination ports: 1008 / 58
+-------------------------------------------------------------------------
+Delay:               6.094ns (Levels of Logic = 8)
+  Source:            fluxoDados/div/IQ_9 (FF)
+  Destination:       fluxoDados/div/pivo (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: fluxoDados/div/IQ_9 to fluxoDados/div/pivo
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.591   0.622  fluxoDados/div/IQ_9 (fluxoDados/div/IQ_9)
+     LUT4:I0->O            1   0.704   0.000  fluxoDados/div/IQ_cmp_eq0000_wg_lut<1> (fluxoDados/div/IQ_cmp_eq0000_wg_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  fluxoDados/div/IQ_cmp_eq0000_wg_cy<1> (fluxoDados/div/IQ_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  fluxoDados/div/IQ_cmp_eq0000_wg_cy<2> (fluxoDados/div/IQ_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  fluxoDados/div/IQ_cmp_eq0000_wg_cy<3> (fluxoDados/div/IQ_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  fluxoDados/div/IQ_cmp_eq0000_wg_cy<4> (fluxoDados/div/IQ_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  fluxoDados/div/IQ_cmp_eq0000_wg_cy<5> (fluxoDados/div/IQ_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O          26   0.459   1.339  fluxoDados/div/IQ_cmp_eq0000_wg_cy<6> (fluxoDados/div/IQ_cmp_eq0000)
+     LUT2:I1->O            1   0.704   0.420  fluxoDados/div/pivo_not00021 (fluxoDados/div/pivo_not0002)
+     FDCE:CE                   0.555          fluxoDados/div/pivo
+    ----------------------------------------
+    Total                      6.094ns (3.713ns logic, 2.381ns route)
+                                       (60.9% logic, 39.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'fluxoDados/div/pivo'
+  Clock period: 2.656ns (frequency: 376.506MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               2.656ns (Levels of Logic = 1)
+  Source:            fluxoDados/contad/R_0 (FF)
+  Destination:       fluxoDados/contad/R_0 (FF)
+  Source Clock:      fluxoDados/div/pivo rising
+  Destination Clock: fluxoDados/div/pivo rising
+
+  Data Path: fluxoDados/contad/R_0 to fluxoDados/contad/R_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.591   0.633  fluxoDados/contad/R_0 (fluxoDados/contad/R_0)
+     INV:I->O              1   0.704   0.420  fluxoDados/contad/Mcount_R_xor<0>11_INV_0 (Result<0>1)
+     FDCE:D                    0.308          fluxoDados/contad/R_0
+    ----------------------------------------
+    Total                      2.656ns (1.603ns logic, 1.053ns route)
+                                       (60.4% logic, 39.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.852ns (Levels of Logic = 2)
+  Source:            pulso (PAD)
+  Destination:       unidContr/estado_FSM_FFd2 (FF)
+  Destination Clock: clock rising
+
+  Data Path: pulso to unidContr/estado_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.622  pulso_IBUF (pulso_IBUF)
+     LUT2:I0->O            1   0.704   0.000  unidContr/estado_FSM_FFd2-In1 (unidContr/estado_FSM_FFd2-In)
+     FDC:D                     0.308          unidContr/estado_FSM_FFd2
+    ----------------------------------------
+    Total                      2.852ns (2.230ns logic, 0.622ns route)
+                                       (78.2% logic, 21.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              5.870ns (Levels of Logic = 2)
+  Source:            fluxoDados/registra/Q_1 (FF)
+  Destination:       saida<6> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: fluxoDados/registra/Q_1 to saida<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.591   0.883  fluxoDados/registra/Q_1 (fluxoDados/registra/Q_1)
+     LUT4:I0->O            1   0.704   0.420  fluxoDados/hexa/Mrom_display21 (saida_2_OBUF)
+     OBUF:I->O                 3.272          saida_2_OBUF (saida<2>)
+    ----------------------------------------
+    Total                      5.870ns (4.567ns logic, 1.303ns route)
+                                       (77.8% logic, 22.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.71 secs
+ 
+--> 
+
+Total memory usage is 356760 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

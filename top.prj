@@ -1,0 +1,7 @@
+vhdl work "registrador.vhd"
+vhdl work "hex7seg.vhd"
+vhdl work "divclock.vhd"
+vhdl work "contador.vhd"
+vhdl work "unidControle.vhd"
+vhdl work "fd.vhd"
+vhdl work "top.vhd"

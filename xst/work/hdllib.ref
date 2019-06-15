@@ -1,0 +1,14 @@
+AR divclock exemplo C:/Users/RA00184038/Documents/teste/v1/divclock.vhd sub00/vhpl01 1558190044
+AR fd arquitetura C:/Users/RA00184038/Documents/teste/v1/fd.vhd sub00/vhpl09 1558190054
+EN fd NULL C:/Users/RA00184038/Documents/teste/v1/fd.vhd sub00/vhpl08 1558190053
+EN unidcontrole NULL C:/Users/RA00184038/Documents/teste/v1/unidControle.vhd sub00/vhpl10 1558190051
+EN hex7seg NULL C:/Users/RA00184038/Documents/teste/v1/hex7seg.vhd sub00/vhpl06 1558190049
+EN top NULL C:/Users/RA00184038/Documents/teste/v1/top.vhd sub00/vhpl12 1558190055
+EN divclock NULL C:/Users/RA00184038/Documents/teste/v1/divclock.vhd sub00/vhpl00 1558190043
+AR unidcontrole behavioral C:/Users/RA00184038/Documents/teste/v1/unidControle.vhd sub00/vhpl11 1558190052
+EN registrador NULL C:/Users/RA00184038/Documents/teste/v1/registrador.vhd sub00/vhpl04 1558190047
+EN contador NULL C:/Users/RA00184038/Documents/teste/v1/contador.vhd sub00/vhpl02 1558190045
+AR hex7seg exemplo C:/Users/RA00184038/Documents/teste/v1/hex7seg.vhd sub00/vhpl07 1558190050
+AR top behavioral C:/Users/RA00184038/Documents/teste/v1/top.vhd sub00/vhpl13 1558190056
+AR contador behavioral C:/Users/RA00184038/Documents/teste/v1/contador.vhd sub00/vhpl03 1558190046
+AR registrador behavioral C:/Users/RA00184038/Documents/teste/v1/registrador.vhd sub00/vhpl05 1558190048

@@ -1,0 +1,10 @@
+NET "clock" LOC = "B8";
+NET "reset" LOC = "P11";
+NET "pulso" LOC = "C11";
+NET "saida(0)" LOC = "L14";
+NET "saida(1)" LOC = "H12";
+NET "saida(2)" LOC = "N14";
+NET "saida(3)" LOC = "N11";
+NET "saida(4)" LOC = "P12";
+NET "saida(5)" LOC = "L13";
+NET "saida(6)" LOC = "M12";

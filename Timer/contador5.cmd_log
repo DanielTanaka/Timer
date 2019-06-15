@@ -1,0 +1,2 @@
+vhdtdtfi -lib work contad5.vhd -prj v1 -o contador5.spl -module contador5 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -prj v1 -o C:/Users/ra00184038/Documents/Timer/Timer/Timer/contador5.vhi -module contador5 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work contad5.vhd 

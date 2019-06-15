@@ -44,33 +44,19 @@ Setup/Hold to clock clock
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-pulso       |    1.000(R)|    0.409(R)|clock_BUFGP       |   0.000|
+start       |    0.920(R)|    0.443(R)|clock_BUFGP       |   0.000|
 ------------+------------+------------+------------------+--------+
-
-Clock clock to Pad
-------------+------------+------------------+--------+
-            | clk (edge) |                  | Clock  |
-Destination |   to PAD   |Internal Clock(s) | Phase  |
-------------+------------+------------------+--------+
-saida<0>    |    9.497(R)|clock_BUFGP       |   0.000|
-saida<1>    |    9.798(R)|clock_BUFGP       |   0.000|
-saida<2>    |    9.234(R)|clock_BUFGP       |   0.000|
-saida<3>    |    9.852(R)|clock_BUFGP       |   0.000|
-saida<4>    |    9.989(R)|clock_BUFGP       |   0.000|
-saida<5>    |    9.497(R)|clock_BUFGP       |   0.000|
-saida<6>    |    9.736(R)|clock_BUFGP       |   0.000|
-------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clock
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clock          |    5.620|         |         |         |
+clock          |    5.423|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat May 18 11:34:22 2019 
+Analysis completed Sat Jun 15 15:32:12 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:

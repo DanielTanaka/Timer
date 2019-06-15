@@ -17,23 +17,20 @@ begin
 	process(clock, clear, enable, R)
 	begin
 		if clear = '1' then
-			R <= (others => '9'); --9POORA
-			RCO <= '0'; 
+			R <= "1001"; 
 		elsif clock'event and clock = '1' then
 			if enable = '1' then
-				R <= R - 1;
-				
 				if R = 0 then
-					R <= 9;
-				end if
-				
-				if R = 0 then
-					RCO <= '1';
+					R <= "1001";
 				else
-					RCO <= '0';
-				end if;	
+					R <= R - 1;
+				end if;
 			end if;
 		end if;
 	end process;
+	
+	with R select RCO <= 
+		'1' when "0000",
+		'0' when others;
 	Q <= std_logic_vector(R);
 end Behavioral;

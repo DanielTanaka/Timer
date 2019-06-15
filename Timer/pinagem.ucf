@@ -1,6 +1,6 @@
 NET "clock" LOC = "B8";
 NET "reset" LOC = "P11";
-NET "pulso" LOC = "C11";
+NET "start" LOC = "C11";
 NET "saida(0)" LOC = "L14";
 NET "saida(1)" LOC = "H12";
 NET "saida(2)" LOC = "N14";

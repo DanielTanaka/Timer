@@ -1,0 +1,169 @@
+(edif top
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2019 6 15 14 13 3)
+      (program "Xilinx ngc2edif" (version "P.20131013"))
+      (author "Xilinx. Inc ")
+      (comment "This EDIF netlist is to be used within supported synthesis tools")
+      (comment "for determining resource/timing estimates of the design component")
+      (comment "represented by this netlist.")
+      (comment "Command line: -mdp2sp -w -secure top.ngc top.edif ")))
+  (external UNISIMS
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell GND
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port G
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell OBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+  )
+
+  (library top_lib
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell top
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port reset
+              (direction INPUT)
+            )
+            (port clock
+              (direction INPUT)
+            )
+            (port pausa
+              (direction INPUT)
+            )
+            (port (array (rename saida "saida<6:0>") 7)
+              (direction OUTPUT))
+            (designator "xc3s100e-4-cp132")
+            (property TYPE (string "top") (owner "Xilinx"))
+            (property BUS_INFO (string "7:OUTPUT:saida<6:0>") (owner "Xilinx"))
+            (property NLW_UNIQUE_ID (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_TAG (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_ALIAS (string "top_top") (owner "Xilinx"))
+          )
+          (contents
+            (instance XST_GND
+              (viewRef view_1 (cellRef GND (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance saida_6_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance saida_5_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance saida_4_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance saida_3_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance saida_2_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance saida_1_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance saida_0_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (net N0
+              (joined
+                (portRef G (instanceRef XST_GND))
+                (portRef I (instanceRef saida_6_OBUF))
+                (portRef I (instanceRef saida_5_OBUF))
+                (portRef I (instanceRef saida_4_OBUF))
+                (portRef I (instanceRef saida_3_OBUF))
+                (portRef I (instanceRef saida_2_OBUF))
+                (portRef I (instanceRef saida_1_OBUF))
+                (portRef I (instanceRef saida_0_OBUF))
+              )
+            )
+            (net (rename saida_0_ "saida<0>")
+              (joined
+                (portRef (member saida 6))
+                (portRef O (instanceRef saida_0_OBUF))
+              )
+            )
+            (net (rename saida_1_ "saida<1>")
+              (joined
+                (portRef (member saida 5))
+                (portRef O (instanceRef saida_1_OBUF))
+              )
+            )
+            (net (rename saida_2_ "saida<2>")
+              (joined
+                (portRef (member saida 4))
+                (portRef O (instanceRef saida_2_OBUF))
+              )
+            )
+            (net (rename saida_3_ "saida<3>")
+              (joined
+                (portRef (member saida 3))
+                (portRef O (instanceRef saida_3_OBUF))
+              )
+            )
+            (net (rename saida_4_ "saida<4>")
+              (joined
+                (portRef (member saida 2))
+                (portRef O (instanceRef saida_4_OBUF))
+              )
+            )
+            (net (rename saida_5_ "saida<5>")
+              (joined
+                (portRef (member saida 1))
+                (portRef O (instanceRef saida_5_OBUF))
+              )
+            )
+            (net (rename saida_6_ "saida<6>")
+              (joined
+                (portRef (member saida 0))
+                (portRef O (instanceRef saida_6_OBUF))
+              )
+            )
+          )
+      )
+    )
+  )
+
+  (design top
+    (cellRef top
+      (libraryRef top_lib)
+    )
+    (property PART (string "xc3s100e-4-cp132") (owner "Xilinx"))
+  )
+)
+

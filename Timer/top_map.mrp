@@ -9,23 +9,23 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Sat May 18 11:34:12 2019
+Mapped Date    : Sat Jun 15 15:32:03 2019
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:            36 out of   1,920    1%
-  Number of 4 input LUTs:                46 out of   1,920    2%
+  Number of Slice Flip Flops:            42 out of   1,920    2%
+  Number of 4 input LUTs:                89 out of   1,920    4%
 Logic Distribution:
-  Number of occupied Slices:             40 out of     960    4%
-    Number of Slices containing only related logic:      40 out of      40 100%
-    Number of Slices containing unrelated logic:          0 out of      40   0%
+  Number of occupied Slices:             62 out of     960    6%
+    Number of Slices containing only related logic:      62 out of      62 100%
+    Number of Slices containing unrelated logic:          0 out of      62   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:          70 out of   1,920    3%
-    Number used as logic:                46
-    Number used as a route-thru:         24
+  Total Number of 4 input LUTs:         116 out of   1,920    6%
+    Number used as logic:                89
+    Number used as a route-thru:         27
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
@@ -33,9 +33,9 @@ Logic Distribution:
   Number of bonded IOBs:                 10 out of      83   12%
   Number of BUFGMUXs:                     1 out of      24    4%
 
-Average Fanout of Non-Clock Nets:                2.79
+Average Fanout of Non-Clock Nets:                3.48
 
-Peak Memory Usage:  394 MB
+Peak Memory Usage:  395 MB
 Total REAL time to MAP completion:  0 secs 
 Total CPU time to MAP completion:   0 secs 
 
@@ -109,7 +109,6 @@ Section 6 - IOB Properties
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 | clock                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
-| pulso                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | reset                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | saida<0>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | saida<1>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
@@ -118,6 +117,7 @@ Section 6 - IOB Properties
 | saida<4>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | saida<5>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | saida<6>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| start                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

@@ -8,3 +8,7 @@ NET "saida(3)" LOC = "N11";
 NET "saida(4)" LOC = "P12";
 NET "saida(5)" LOC = "L13";
 NET "saida(6)" LOC = "M12";
+NET "anodes(0)" LOC = "K14";
+NET "anodes(1)" LOC = "M13";
+NET "anodes(2)" LOC = "J12";
+NET "anodes(3)" LOC = "F12";

@@ -1,4 +1,4 @@
-V3 42
+V3 52
 FL C:/Users/RA00184038/Documents/teste/v1/contador.vhd 2019/05/18.11:10:51 P.20131013
 FL C:/Users/RA00184038/Documents/teste/v1/divclock.vhd 2019/04/27.12:24:36 P.20131013
 FL C:/Users/RA00184038/Documents/teste/v1/fd.vhd 2019/05/13.19:33:38 P.20131013
@@ -6,41 +6,48 @@ FL C:/Users/RA00184038/Documents/teste/v1/hex7seg.vhd 2019/04/27.10:39:40 P.2013
 FL C:/Users/RA00184038/Documents/teste/v1/registrador.vhd 2019/05/13.19:15:38 P.20131013
 FL C:/Users/RA00184038/Documents/teste/v1/top.vhd 2019/05/18.11:29:32 P.20131013
 FL C:/Users/RA00184038/Documents/teste/v1/unidControle.vhd 2019/05/18.11:33:47 P.20131013
+FL C:/Users/RA00184038/Documents/Timer/Timer/contador.vhd 2019/06/19.22:06:53 P.20131013
+EN work/contador 1560993285 \
+      FL C:/Users/RA00184038/Documents/Timer/Timer/contador.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/contador/Behavioral 1560993286 \
+      FL C:/Users/RA00184038/Documents/Timer/Timer/contador.vhd EN work/contador 1560993285
+FL C:/Users/RA00184038/Documents/Timer/Timer/contadorcinco.vhd 2019/06/19.22:06:53 P.20131013
+EN work/contadorcinco 1560993287 \
+      FL C:/Users/RA00184038/Documents/Timer/Timer/contadorcinco.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/contadorcinco/Behavioral 1560993288 \
+      FL C:/Users/RA00184038/Documents/Timer/Timer/contadorcinco.vhd \
+      EN work/contadorcinco 1560993287
+FL C:/Users/RA00184038/Documents/Timer/Timer/divclock.vhd 2019/06/19.22:06:53 P.20131013
+EN work/divclock 1560993283 \
+      FL C:/Users/RA00184038/Documents/Timer/Timer/divclock.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/divclock/exemplo 1560993284 \
+      FL C:/Users/RA00184038/Documents/Timer/Timer/divclock.vhd EN work/divclock 1560993283
+FL C:/Users/RA00184038/Documents/Timer/Timer/fd.vhd 2019/06/19.22:11:35 P.20131013
+EN work/fd 1560993295 FL C:/Users/RA00184038/Documents/Timer/Timer/fd.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/fd/arquitetura 1560993296 \
+      FL C:/Users/RA00184038/Documents/Timer/Timer/fd.vhd EN work/fd 1560993295 \
+      CP divclock CP contador CP contadorcinco CP hex7seg CP display
+FL C:/Users/RA00184038/Documents/Timer/Timer/hex7seg.vhd 2019/06/19.22:06:53 P.20131013
+EN work/hex7seg 1560993289 \
+      FL C:/Users/RA00184038/Documents/Timer/Timer/hex7seg.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/hex7seg/exemplo 1560993290 \
+      FL C:/Users/RA00184038/Documents/Timer/Timer/hex7seg.vhd EN work/hex7seg 1560993289
+FL C:/Users/RA00184038/Documents/Timer/Timer/mux.vhd 2019/06/19.22:10:11 P.20131013
+EN work/display 1560993291 FL C:/Users/RA00184038/Documents/Timer/Timer/mux.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/display/Behavioral 1560993292 \
+      FL C:/Users/RA00184038/Documents/Timer/Timer/mux.vhd EN work/display 1560993291
 FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/contad5.vhd 2019/06/15.10:07:14 P.20131013
 FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/contador.vhd 2019/06/15.10:28:56 P.20131013
-EN work/contador 1560623515 \
-      FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/contador.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/contador/Behavioral 1560623516 \
-      FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/contador.vhd \
-      EN work/contador 1560623515
 FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/contadorcinco.vhd 2019/06/15.12:36:09 P.20131013
-EN work/contadorcinco 1560623517 \
-      FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/contadorcinco.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/contadorcinco/Behavioral 1560623518 \
-      FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/contadorcinco.vhd \
-      EN work/contadorcinco 1560623517
 FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/divclock.vhd 2019/04/27.12:24:36 P.20131013
-EN work/divclock 1560623513 \
-      FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/divclock.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/divclock/exemplo 1560623514 \
-      FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/divclock.vhd \
-      EN work/divclock 1560623513
 FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/fd.vhd 2019/06/15.14:58:49 P.20131013
-EN work/fd 1560623525 FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/fd.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/fd/arquitetura 1560623526 \
-      FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/fd.vhd EN work/fd 1560623525 \
-      CP divclock CP contador CP contadorcinco CP hex7seg CP mux
 FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/hex7seg.vhd 2019/04/27.10:39:40 P.20131013
-EN work/hex7seg 1560623519 \
-      FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/hex7seg.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/hex7seg/exemplo 1560623520 \
-      FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/hex7seg.vhd \
-      EN work/hex7seg 1560623519
 FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/mux.vhd 2019/06/15.13:15:19 P.20131013
 EN work/mux 1560623521 FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/mux.vhd \
       PB ieee/std_logic_1164 1381692176
@@ -54,15 +61,17 @@ AR work/registrador/Behavioral 1560606088 \
       FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/registrador.vhd \
       EN work/registrador 1560606087
 FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/top.vhd 2019/06/15.14:59:46 P.20131013
-EN work/top 1560623527 FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/top.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/top/Behavioral 1560623528 \
-      FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/top.vhd EN work/top 1560623527 \
-      CP unidControle CP fd
 FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/unidControle.vhd 2019/06/15.15:31:51 P.20131013
-EN work/unidControle 1560623523 \
-      FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/unidControle.vhd \
+FL C:/Users/RA00184038/Documents/Timer/Timer/top.vhd 2019/06/19.22:12:15 P.20131013
+EN work/top 1560993297 FL C:/Users/RA00184038/Documents/Timer/Timer/top.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/unidControle/Behavioral 1560623524 \
-      FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/unidControle.vhd \
-      EN work/unidControle 1560623523
+AR work/top/Behavioral 1560993298 \
+      FL C:/Users/RA00184038/Documents/Timer/Timer/top.vhd EN work/top 1560993297 \
+      CP unidControle CP fd
+FL C:/Users/RA00184038/Documents/Timer/Timer/unidControle.vhd 2019/06/19.22:06:53 P.20131013
+EN work/unidControle 1560993293 \
+      FL C:/Users/RA00184038/Documents/Timer/Timer/unidControle.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/unidControle/Behavioral 1560993294 \
+      FL C:/Users/RA00184038/Documents/Timer/Timer/unidControle.vhd \
+      EN work/unidControle 1560993293

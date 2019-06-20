@@ -1,33 +1,70 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
 
-entity mux is
-    Port ( A : in  STD_LOGIC_VECTOR(6 downto 0);
-			  B : in  STD_LOGIC_VECTOR(6 downto 0);
-			  C : in  STD_LOGIC_VECTOR(6 downto 0);
-			  D : in  STD_LOGIC_VECTOR(6 downto 0);
-           S0 : in  STD_LOGIC;
-           S1 : in  STD_LOGIC;
-           Z : out  STD_LOGIC_VECTOR(6 downto 0));
+entity display is
+    port(
+        clock     : in  std_logic;
+		  entrada3  : in  std_logic_vector(6 downto 0);
+		  entrada2  : in  std_logic_vector(6 downto 0);
+		  entrada1  : in  std_logic_vector(6 downto 0);
+		  entrada0  : in  std_logic_vector(6 downto 0);
+        sevenseg  : out std_logic_vector(6 downto 0);
+        anodes  	: out std_logic_vector(3 downto 0));
+end display;
 
-end mux;
-
-architecture Behavioral of mux is
-
+architecture Behavioral of display is
+    signal prescaler: std_logic_vector(16 downto 0) := "11000011010100000";
+    signal prescaler_counter: std_logic_vector(16 downto 0);
+    signal counter: std_logic_vector(1 downto 0);
+    signal r_anodes: std_logic_vector(3 downto 0);
 begin
-process (A,B,C,D,S0,S1) is
-begin
-  if (S0 ='0' and S1 = '0') then
-      Z <= A;
-  elsif (S0 ='1' and S1 = '0') then
-      Z <= B;
-  elsif (S0 ='0' and S1 = '1') then
-      Z <= C;
-  else
-      Z <= D;
-  end if;
- 
-end process;
 
+	-- Redutor de Clock
+	countClock: process(clock, counter)
+   begin
+		if clock'event and clock = '1' then
+			prescaler_counter <= prescaler_counter + 1;
+				
+			if(prescaler_counter = prescaler) then
+				counter <= counter + 1;
+				prescaler_counter <= (others => '0');
+			end if;
+		end if;
+	end process;
+
+    -- Multiplexacao dos Displays
+	multiplex: process(counter)
+   begin
+		-- Selecao dos anodos
+			case counter(1 downto 0) is
+				when "00" => r_anodes <= "1110"; -- AN 0
+				when "01" => r_anodes <= "1101"; -- AN 1
+				when "10" => r_anodes <= "1011"; -- AN 2
+            when "11" => r_anodes <= "0111"; -- AN 3
+
+            when others => r_anodes <= "1111"; -- nothing
+			end case;
+
+		-- Atribui as entradas aos displays
+			case r_anodes is
+				when "1110" => 
+					sevenseg <= entrada0;
+
+				when "1101" => 
+					sevenseg <= entrada1;
+
+				when "1011" => 
+					sevenseg <= entrada2;
+
+            when "0111" => 
+					sevenseg <= entrada3;
+
+            when others => 
+					sevenseg <= "1000000"; -- 0
+        end case;
+
+	end process;
+
+	anodes <= r_anodes;
 end Behavioral;
-

@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sat Jun 15 15:32:09 2019
+Wed Jun 19 22:15:03 2019
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -76,7 +76,7 @@ E14|||GND||||||||||||
 F1||DIFFM|IO_L05P_3/LHCLK2|UNUSED||3|||||||||
 F2||DIFFS|IO_L04N_3/LHCLK1|UNUSED||3|||||||||
 F3||DIFFM|IO_L04P_3/LHCLK0|UNUSED||3|||||||||
-F12||IOB|IO/A0|UNUSED||1|||||||||
+F12|anodes<3>|IOB|IO/A0|OUTPUT|LVCMOS25*|1|12|SLOW|NONE**|||LOCATED|NO|NONE|
 F13||DIFFS|IO_L08N_1/A1|UNUSED||1|||||||||
 F14||DIFFM|IO_L08P_1/A2|UNUSED||1|||||||||
 G1||DIFFS|IO_L05N_3/LHCLK3/IRDY2|UNUSED||3|||||||||
@@ -94,7 +94,7 @@ H14|||GND||||||||||||
 J1|||GND||||||||||||
 J2|||VCCO_3|||3|||||any******||||
 J3||IOB|IO|UNUSED||3|||||||||
-J12||DIFFS|IO_L04N_1/A9/RHCLK1|UNUSED||1|||||||||
+J12|anodes<2>|IOB|IO_L04N_1/A9/RHCLK1|OUTPUT|LVCMOS25*|1|12|SLOW|NONE**|||LOCATED|NO|NONE|
 J13||DIFFM|IO_L05P_1/A8/RHCLK2|UNUSED||1|||||||||
 J14||DIFFS|IO_L05N_1/A7/RHCLK3/TRDY1|UNUSED||1|||||||||
 K1|||VCCAUX||||||||2.5||||
@@ -102,7 +102,7 @@ K2|||NC||||||||||||
 K3||IBUF|IP/VREF_3|UNUSED||3|||||||||
 K12|||GND||||||||||||
 K13||IOB|IO/VREF_1|UNUSED||1|||||||||
-K14||DIFFM|IO_L04P_1/A10/RHCLK0|UNUSED||1|||||||||
+K14|anodes<0>|IOB|IO_L04P_1/A10/RHCLK0|OUTPUT|LVCMOS25*|1|12|SLOW|NONE**|||LOCATED|NO|NONE|
 L1||DIFFM|IO_L08P_3|UNUSED||3|||||||||
 L2||DIFFS|IO_L08N_3|UNUSED||3|||||||||
 L3||DIFFM|IO_L09P_3|UNUSED||3|||||||||
@@ -121,7 +121,7 @@ M9|||NC||||||||||||
 M10|||NC||||||||||||
 M11||DIFFS|IO_L10N_2/VS1/A18|UNUSED||2|||||||||
 M12|saida<6>|IOB|IO_L02P_1/A14|OUTPUT|LVCMOS25*|1|12|SLOW|NONE**|||LOCATED|NO|NONE|
-M13||DIFFS|IO_L02N_1/A13|UNUSED||1|||||||||
+M13|anodes<1>|IOB|IO_L02N_1/A13|OUTPUT|LVCMOS25*|1|12|SLOW|NONE**|||LOCATED|NO|NONE|
 M14|||VCCO_1|||1|||||2.50||||
 N1||DIFFS|IO_L01N_2/INIT_B|UNUSED||2|||||||||
 N2||DIFFS|IO_L02N_2/MOSI/CSI_B|UNUSED||2|||||||||

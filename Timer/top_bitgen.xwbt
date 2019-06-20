@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\ra00184038\Documents\Timer\Timer\Timer\top.ncd
-OUTFILE=C:\Users\ra00184038\Documents\Timer\Timer\Timer\top.bit
+INFILE=C:\Users\RA00184038\Documents\Timer\Timer\top.ncd
+OUTFILE=C:\Users\RA00184038\Documents\Timer\Timer\top.bit
 FAMILY=Spartan3E
 PART=xc3s100e-4cp132
-WORKINGDIR=C:\Users\ra00184038\Documents\Timer\Timer\Timer
+WORKINGDIR=C:\Users\RA00184038\Documents\Timer\Timer
 LICENSE=WebPack
 USER_INFO=210645134_0_0_419

@@ -5,7 +5,8 @@ entity fd is
     Port ( clock : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            enableCont : in  STD_LOGIC;
-           saida : out  STD_LOGIC_VECTOR (6 downto 0));
+           saida : out  STD_LOGIC_VECTOR (6 downto 0);
+			  anodes : out  STD_LOGIC_VECTOR (3 downto 0));
 end fd;
 
 architecture arquitetura of fd is
@@ -43,14 +44,15 @@ architecture arquitetura of fd is
 			);
 	end component;
 	
-	component mux is
-    Port ( A : in  STD_LOGIC_VECTOR(6 downto 0);
-			  B : in  STD_LOGIC_VECTOR(6 downto 0);
-			  C : in  STD_LOGIC_VECTOR(6 downto 0);
-			  D : in  STD_LOGIC_VECTOR(6 downto 0);
-           S0 : in  STD_LOGIC;
-           S1 : in  STD_LOGIC;
-           Z : out  STD_LOGIC_VECTOR(6 downto 0));
+	component display is
+		 port(
+			  clock     : in  std_logic;
+			  entrada3  : in  std_logic_vector(6 downto 0);
+			  entrada2  : in  std_logic_vector(6 downto 0);
+			  entrada1  : in  std_logic_vector(6 downto 0);
+			  entrada0  : in  std_logic_vector(6 downto 0);
+			  sevenseg  : out std_logic_vector(6 downto 0);
+			  anodes  	: out std_logic_vector(3 downto 0));
 	end component;
 
 	signal clockdiv : std_logic;
@@ -89,6 +91,6 @@ begin
 	hexa3 : hex7seg port map(cont3, saida3);
 	hexa4 : hex7seg port map(cont4, saida4);
 	
-	mu : mux port map(saida1, saida2, saida3, saida4, rcoB, rcoD, saida);
+	mux : display port map(clock, saida4, saida3, saida2, saida1, saida, anodes);
 end arquitetura;
 

@@ -5,7 +5,8 @@ entity top is
     Port ( clock : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            start : in  STD_LOGIC;
-           saida : out  STD_LOGIC_VECTOR (6 downto 0));
+           saida : out  STD_LOGIC_VECTOR (6 downto 0);
+			  anodes : out  STD_LOGIC_VECTOR (3 downto 0));
 end top;
 
 architecture Behavioral of top is
@@ -14,7 +15,8 @@ architecture Behavioral of top is
 	  Port (clock : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            enableCont : in  STD_LOGIC;
-           saida : out  STD_LOGIC_VECTOR (6 downto 0));
+           saida : out  STD_LOGIC_VECTOR (6 downto 0);
+			  anodes : out  STD_LOGIC_VECTOR (3 downto 0));
 	end component;
 	
 	component unidControle is
@@ -29,7 +31,7 @@ architecture Behavioral of top is
 begin
 
 	unidContr : unidControle port map(clock, reset, start, enabCont);
-	fluxoDados: fd port map(clock, reset, enabCont, saida);
+	fluxoDados: fd port map(clock, reset, enabCont, saida, anodes);
 
 end Behavioral;
 

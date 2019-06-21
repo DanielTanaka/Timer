@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.39 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.39 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.40 secs
  
 --> Reading design: top.prj
 
@@ -105,8 +105,7 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/divclock.vhd" in Library work.
-Entity <divclock> compiled.
-Entity <divclock> (Architecture <exemplo>) compiled.
+Architecture exemplo of Entity divclock is up to date.
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/contador.vhd" in Library work.
 Architecture behavioral of Entity contador is up to date.
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/contadorcinco.vhd" in Library work.
@@ -116,7 +115,8 @@ Architecture exemplo of Entity hex7seg is up to date.
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/mux.vhd" in Library work.
 Architecture behavioral of Entity display is up to date.
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/unidControle.vhd" in Library work.
-Architecture behavioral of Entity unidcontrole is up to date.
+Entity <unidcontrole> compiled.
+Entity <unidcontrole> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/fd.vhd" in Library work.
 Architecture arquitetura of Entity fd is up to date.
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/top.vhd" in Library work.
@@ -183,9 +183,9 @@ Synthesizing Unit <unidControle>.
     Related source file is "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/unidControle.vhd".
     Found finite state machine <FSM_0> for signal <estado>.
     -----------------------------------------------------------------------
-    | States             | 3                                              |
-    | Transitions        | 6                                              |
-    | Inputs             | 1                                              |
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 2                                              |
     | Outputs            | 1                                              |
     | Clock              | clock                     (rising_edge)        |
     | Reset              | reset                     (positive)           |
@@ -248,7 +248,6 @@ Unit <display> synthesized.
 
 Synthesizing Unit <fd>.
     Related source file is "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/fd.vhd".
-WARNING:Xst:646 - Signal <rcoD> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <fd> synthesized.
 
 
@@ -287,6 +286,7 @@ Optimizing FSM <unidContr/estado/FSM> on signal <estado[1:2]> with user encoding
  inicial  | 00
  contagem | 01
  pause    | 10
+ final    | 11
 ----------------------
 WARNING:Xst:79 - Model 'fd' has different characteristics in destination library
 WARNING:Xst:80 - Model name has been changed to 'fd1'
@@ -324,7 +324,7 @@ WARNING:Xst:1710 - FF/Latch <contadD/R_3> (without init value) has a constant va
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 9.
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 10.
 
 Final Macro Processing ...
 
@@ -332,8 +332,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 61
- Flip-Flops                                            : 61
+# Registers                                            : 62
+ Flip-Flops                                            : 62
 
 =========================================================================
 
@@ -362,20 +362,22 @@ Design Statistics
 # IOs                              : 14
 
 Cell Usage :
-# BELS                             : 254
+# BELS                             : 262
 #      GND                         : 1
 #      INV                         : 10
 #      LUT1                        : 40
 #      LUT2                        : 34
-#      LUT2_L                      : 1
 #      LUT3                        : 16
-#      LUT4                        : 43
+#      LUT3_L                      : 1
+#      LUT4                        : 49
+#      LUT4_D                      : 1
+#      LUT4_L                      : 1
 #      MUXCY                       : 52
 #      MUXF5                       : 14
 #      VCC                         : 1
 #      XORCY                       : 42
-# FlipFlops/Latches                : 61
-#      FDC                         : 1
+# FlipFlops/Latches                : 62
+#      FDC                         : 2
 #      FDCE                        : 33
 #      FDE                         : 2
 #      FDPE                        : 8
@@ -392,9 +394,9 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                       75  out of    960     7%  
- Number of Slice Flip Flops:             61  out of   1920     3%  
- Number of 4 input LUTs:                144  out of   1920     7%  
+ Number of Slices:                       79  out of    960     8%  
+ Number of Slice Flip Flops:             62  out of   1920     3%  
+ Number of 4 input LUTs:                152  out of   1920     7%  
  Number of IOs:                          14
  Number of bonded IOBs:                  14  out of     83    16%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -420,7 +422,7 @@ Clock Information:
 -----------------------------------+-----------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)       | Load  |
 -----------------------------------+-----------------------------+-------+
-clock                              | BUFGP                       | 46    |
+clock                              | BUFGP                       | 47    |
 fluxoDados/div/pivo                | NONE(fluxoDados/contadD/R_2)| 15    |
 -----------------------------------+-----------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -430,16 +432,16 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-reset                              | IBUF                   | 42    |
+reset                              | IBUF                   | 43    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 6.911ns (Maximum Frequency: 144.697MHz)
-   Minimum input arrival time before clock: 2.825ns
-   Maximum output required time after clock: 7.647ns
+   Minimum period: 6.094ns (Maximum Frequency: 164.087MHz)
+   Minimum input arrival time before clock: 2.852ns
+   Maximum output required time after clock: 7.686ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -449,7 +451,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock'
   Clock period: 6.094ns (frequency: 164.087MHz)
-  Total number of paths / destination ports: 1482 / 91
+  Total number of paths / destination ports: 1511 / 92
 -------------------------------------------------------------------------
 Delay:               6.094ns (Levels of Logic = 8)
   Source:            fluxoDados/div/IQ_9 (FF)
@@ -477,34 +479,33 @@ Delay:               6.094ns (Levels of Logic = 8)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'fluxoDados/div/pivo'
-  Clock period: 6.911ns (frequency: 144.697MHz)
+  Clock period: 5.508ns (frequency: 181.554MHz)
   Total number of paths / destination ports: 130 / 26
 -------------------------------------------------------------------------
-Delay:               6.911ns (Levels of Logic = 4)
-  Source:            fluxoDados/contadA/R_0 (FF)
-  Destination:       fluxoDados/contadD/R_2 (FF)
+Delay:               5.508ns (Levels of Logic = 3)
+  Source:            fluxoDados/contadB/R_1 (FF)
+  Destination:       fluxoDados/contadC/R_3 (FF)
   Source Clock:      fluxoDados/div/pivo rising
   Destination Clock: fluxoDados/div/pivo rising
 
-  Data Path: fluxoDados/contadA/R_0 to fluxoDados/contadD/R_2
+  Data Path: fluxoDados/contadB/R_1 to fluxoDados/contadC/R_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDPE:C->Q            12   0.591   1.040  fluxoDados/contadA/R_0 (fluxoDados/contadA/R_0)
-     LUT2_L:I1->LO         1   0.704   0.104  fluxoDados/expressionC31_SW0 (N01)
-     LUT4:I3->O            5   0.704   0.637  fluxoDados/expressionC31 (fluxoDados/expressionA)
-     LUT4:I3->O            5   0.704   0.637  fluxoDados/expressionC3 (fluxoDados/expressionB)
-     LUT4:I3->O            3   0.704   0.531  fluxoDados/expressionC (fluxoDados/expressionC)
-     FDPE:CE                   0.555          fluxoDados/contadD/R_0
+     FDCE:C->Q            11   0.591   1.108  fluxoDados/contadB/R_1 (fluxoDados/contadB/R_1)
+     LUT4:I0->O            2   0.704   0.451  fluxoDados/expressionB31 (fluxoDados/expressionB_bdd2)
+     LUT4_L:I3->LO         1   0.704   0.104  fluxoDados/expressionB1_SW0 (N8)
+     LUT4:I3->O            4   0.704   0.587  fluxoDados/expressionB1 (fluxoDados/expressionB)
+     FDCE:CE                   0.555          fluxoDados/contadC/R_1
     ----------------------------------------
-    Total                      6.911ns (3.962ns logic, 2.949ns route)
-                                       (57.3% logic, 42.7% route)
+    Total                      5.508ns (3.258ns logic, 2.250ns route)
+                                       (59.2% logic, 40.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              2.825ns (Levels of Logic = 2)
+Offset:              2.852ns (Levels of Logic = 2)
   Source:            start (PAD)
   Destination:       unidContr/estado_FSM_FFd2 (FF)
   Destination Clock: clock rising
@@ -513,12 +514,12 @@ Offset:              2.825ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.218   0.595  start_IBUF (start_IBUF)
-     LUT2:I0->O            1   0.704   0.000  unidContr/estado_FSM_FFd2-In1 (unidContr/estado_FSM_FFd2-In)
+     IBUF:I->O             2   1.218   0.622  start_IBUF (start_IBUF)
+     LUT4:I0->O            1   0.704   0.000  unidContr/estado_FSM_FFd2-In1 (unidContr/estado_FSM_FFd2-In)
      FDC:D                     0.308          unidContr/estado_FSM_FFd2
     ----------------------------------------
-    Total                      2.825ns (2.230ns logic, 0.595ns route)
-                                       (78.9% logic, 21.1% route)
+    Total                      2.852ns (2.230ns logic, 0.622ns route)
+                                       (78.2% logic, 21.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
@@ -545,35 +546,35 @@ Offset:              7.310ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'fluxoDados/div/pivo'
   Total number of paths / destination ports: 105 / 7
 -------------------------------------------------------------------------
-Offset:              7.647ns (Levels of Logic = 4)
-  Source:            fluxoDados/contadB/R_0 (FF)
-  Destination:       saida<3> (PAD)
+Offset:              7.686ns (Levels of Logic = 4)
+  Source:            fluxoDados/contadA/R_1 (FF)
+  Destination:       saida<6> (PAD)
   Source Clock:      fluxoDados/div/pivo rising
 
-  Data Path: fluxoDados/contadB/R_0 to saida<3>
+  Data Path: fluxoDados/contadA/R_1 to saida<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDPE:C->Q            12   0.591   1.136  fluxoDados/contadB/R_0 (fluxoDados/contadB/R_0)
-     LUT4:I0->O            1   0.704   0.000  fluxoDados/mux/sevenseg<3>310_G (N53)
-     MUXF5:I1->O           1   0.321   0.499  fluxoDados/mux/sevenseg<3>310 (fluxoDados/mux/sevenseg<3>310)
-     LUT3:I1->O            1   0.704   0.420  fluxoDados/mux/sevenseg<3>339 (saida_3_OBUF)
-     OBUF:I->O                 3.272          saida_3_OBUF (saida<3>)
+     FDCE:C->Q            14   0.591   1.175  fluxoDados/contadA/R_1 (fluxoDados/contadA/R_1)
+     LUT4:I0->O            1   0.704   0.000  fluxoDados/mux/sevenseg<6>256_SW0_G (N65)
+     MUXF5:I1->O           1   0.321   0.499  fluxoDados/mux/sevenseg<6>256_SW0 (N36)
+     LUT3:I1->O            1   0.704   0.420  fluxoDados/mux/sevenseg<6>256 (saida_6_OBUF)
+     OBUF:I->O                 3.272          saida_6_OBUF (saida<6>)
     ----------------------------------------
-    Total                      7.647ns (5.592ns logic, 2.055ns route)
-                                       (73.1% logic, 26.9% route)
+    Total                      7.686ns (5.592ns logic, 2.094ns route)
+                                       (72.8% logic, 27.2% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.39 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.68 secs
  
 --> 
 
-Total memory usage is 4487556 kilobytes
+Total memory usage is 4487532 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    7 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

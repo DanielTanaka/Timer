@@ -5,6 +5,7 @@ entity fd is
     Port ( clock : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            enableCont : in  STD_LOGIC;
+			  final_count : out STD_LOGIC;
            saida : out  STD_LOGIC_VECTOR (6 downto 0);
 			  anodes : out  STD_LOGIC_VECTOR (3 downto 0));
 end fd;
@@ -90,6 +91,7 @@ begin
 	hexa3 : hex7seg port map(cont3, saida3);
 	hexa4 : hex7seg port map(cont4, saida4);
 	
+	final_count <= rcoA and rcoB and rcoC and rcoD;
 	mux : display port map(clock, saida1, saida2, saida3, saida4, saida, anodes);
 end arquitetura;
 

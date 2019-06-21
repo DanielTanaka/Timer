@@ -5,17 +5,18 @@ entity unidControle is
     Port ( clock : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            start : in  STD_LOGIC;
+			  final_cont : in STD_LOGIC;
            enCont : out  STD_LOGIC);
 end unidControle;
 
 architecture Behavioral of unidControle is
 
-	type tipo_estado is (inicial, contagem, pause); 
+	type tipo_estado is (inicial, contagem, pause, final); 
 	signal estado   : tipo_estado; 
 
 begin
 
-	process (clock, reset, estado, start) --FINAL STATE
+	process (clock, reset, estado, start, final_cont) --FINAL STATE
 	begin
 	
 	if reset = '1' then
@@ -42,6 +43,9 @@ begin
 				--	estado <= contagem;
 				else
 					estado <= pause;
+				end if;
+				if final_cont = '1' then
+					estado <= final;
 				end if;	
 			when pause =>
 				if start = '0' then
@@ -49,6 +53,8 @@ begin
 				else
 					estado <= contagem;
 				end if;
+			when final =>
+				estado <= final;
 		end case;
 	end if;
 	

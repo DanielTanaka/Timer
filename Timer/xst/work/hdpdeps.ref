@@ -35,54 +35,54 @@ FL C:/Users/ra00184038/Documents/Timer/Timer/Timer/unidControle.vhd 2019/06/15.1
 FL C:/Users/RA00184038/Documents/Timer/Timer/top.vhd 2019/06/19.22:12:15 P.20131013
 FL C:/Users/RA00184038/Documents/Timer/Timer/unidControle.vhd 2019/06/19.22:06:53 P.20131013
 FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/contador.vhd 2019/06/20.23:11:55 P.20131013
-EN work/contador 1561089169 \
+EN work/contador 1561093805 \
       FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/contador.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/contador/Behavioral 1561089170 \
+AR work/contador/Behavioral 1561093806 \
       FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/contador.vhd \
-      EN work/contador 1561089169
+      EN work/contador 1561093805
 FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/contadorcinco.vhd 2019/06/20.23:11:55 P.20131013
-EN work/contadorcinco 1561089171 \
+EN work/contadorcinco 1561093807 \
       FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/contadorcinco.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/contadorcinco/Behavioral 1561089172 \
+AR work/contadorcinco/Behavioral 1561093808 \
       FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/contadorcinco.vhd \
-      EN work/contadorcinco 1561089171
+      EN work/contadorcinco 1561093807
 FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/divclock.vhd 2019/06/21.00:52:40 P.20131013
-EN work/divclock 1561089167 \
+EN work/divclock 1561093803 \
       FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/divclock.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/divclock/exemplo 1561089168 \
+AR work/divclock/exemplo 1561093804 \
       FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/divclock.vhd \
-      EN work/divclock 1561089167
-FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/fd.vhd 2019/06/21.00:26:53 P.20131013
-EN work/fd 1561089179 FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/fd.vhd \
+      EN work/divclock 1561093803
+FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/fd.vhd 2019/06/21.01:58:05 P.20131013
+EN work/fd 1561093815 FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/fd.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/fd/arquitetura 1561089180 \
-      FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/fd.vhd EN work/fd 1561089179 \
+AR work/fd/arquitetura 1561093816 \
+      FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/fd.vhd EN work/fd 1561093815 \
       CP divclock CP contador CP contadorcinco CP hex7seg CP display
 FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/hex7seg.vhd 2019/06/20.23:11:55 P.20131013
-EN work/hex7seg 1561089173 \
+EN work/hex7seg 1561093809 \
       FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/hex7seg.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/hex7seg/exemplo 1561089174 \
-      FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/hex7seg.vhd EN work/hex7seg 1561089173
+AR work/hex7seg/exemplo 1561093810 \
+      FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/hex7seg.vhd EN work/hex7seg 1561093809
 FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/mux.vhd 2019/06/20.23:11:55 P.20131013
-EN work/display 1561089175 \
+EN work/display 1561093811 \
       FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/mux.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/display/Behavioral 1561089176 \
-      FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/mux.vhd EN work/display 1561089175
-FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/top.vhd 2019/06/20.23:11:55 P.20131013
-EN work/top 1561089181 FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/top.vhd \
+AR work/display/Behavioral 1561093812 \
+      FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/mux.vhd EN work/display 1561093811
+FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/top.vhd 2019/06/21.01:59:04 P.20131013
+EN work/top 1561093817 FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/top.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/top/Behavioral 1561089182 \
-      FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/top.vhd EN work/top 1561089181 \
+AR work/top/Behavioral 1561093818 \
+      FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/top.vhd EN work/top 1561093817 \
       CP unidControle CP fd
-FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/unidControle.vhd 2019/06/20.23:11:55 P.20131013
-EN work/unidControle 1561089177 \
+FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/unidControle.vhd 2019/06/21.02:09:55 P.20131013
+EN work/unidControle 1561093813 \
       FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/unidControle.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/unidControle/Behavioral 1561089178 \
+AR work/unidControle/Behavioral 1561093814 \
       FL D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/unidControle.vhd \
-      EN work/unidControle 1561089177
+      EN work/unidControle 1561093813

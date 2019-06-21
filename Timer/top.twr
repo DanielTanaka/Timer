@@ -44,7 +44,7 @@ Setup/Hold to clock clock
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-start       |    1.184(R)|    0.231(R)|clock_BUFGP       |   0.000|
+start       |    1.254(R)|    0.287(R)|clock_BUFGP       |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clock to Pad
@@ -52,17 +52,17 @@ Clock clock to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-anodes<0>   |    8.906(R)|clock_BUFGP       |   0.000|
-anodes<1>   |   10.088(R)|clock_BUFGP       |   0.000|
-anodes<2>   |   10.487(R)|clock_BUFGP       |   0.000|
-anodes<3>   |    8.905(R)|clock_BUFGP       |   0.000|
-saida<0>    |   11.535(R)|clock_BUFGP       |   0.000|
-saida<1>    |   11.391(R)|clock_BUFGP       |   0.000|
-saida<2>    |   11.371(R)|clock_BUFGP       |   0.000|
-saida<3>    |   11.821(R)|clock_BUFGP       |   0.000|
-saida<4>    |   11.000(R)|clock_BUFGP       |   0.000|
-saida<5>    |   11.444(R)|clock_BUFGP       |   0.000|
-saida<6>    |   10.526(R)|clock_BUFGP       |   0.000|
+anodes<0>   |    8.880(R)|clock_BUFGP       |   0.000|
+anodes<1>   |   10.026(R)|clock_BUFGP       |   0.000|
+anodes<2>   |    9.285(R)|clock_BUFGP       |   0.000|
+anodes<3>   |    9.968(R)|clock_BUFGP       |   0.000|
+saida<0>    |   10.287(R)|clock_BUFGP       |   0.000|
+saida<1>    |   10.205(R)|clock_BUFGP       |   0.000|
+saida<2>    |   10.804(R)|clock_BUFGP       |   0.000|
+saida<3>    |   10.382(R)|clock_BUFGP       |   0.000|
+saida<4>    |   10.934(R)|clock_BUFGP       |   0.000|
+saida<5>    |   10.714(R)|clock_BUFGP       |   0.000|
+saida<6>    |   10.999(R)|clock_BUFGP       |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clock
@@ -70,11 +70,11 @@ Clock to Setup on destination clock clock
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clock          |    5.408|         |         |         |
+clock          |    5.460|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Jun 21 00:53:42 2019 
+Analysis completed Fri Jun 21 02:11:32 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:

@@ -2,7 +2,7 @@
 Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf pinagem.ucf
 
 Design file:              top.ncd
@@ -52,17 +52,17 @@ Clock clock to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-anodes<0>   |    9.190(R)|clock_BUFGP       |   0.000|
-anodes<1>   |    9.890(R)|clock_BUFGP       |   0.000|
-anodes<2>   |    9.634(R)|clock_BUFGP       |   0.000|
-anodes<3>   |   10.008(R)|clock_BUFGP       |   0.000|
-saida<0>    |   12.202(R)|clock_BUFGP       |   0.000|
-saida<1>    |   12.087(R)|clock_BUFGP       |   0.000|
-saida<2>    |   12.118(R)|clock_BUFGP       |   0.000|
-saida<3>    |   11.281(R)|clock_BUFGP       |   0.000|
-saida<4>    |   11.751(R)|clock_BUFGP       |   0.000|
-saida<5>    |   11.051(R)|clock_BUFGP       |   0.000|
-saida<6>    |   11.363(R)|clock_BUFGP       |   0.000|
+anodes<0>   |    8.906(R)|clock_BUFGP       |   0.000|
+anodes<1>   |   10.088(R)|clock_BUFGP       |   0.000|
+anodes<2>   |   10.487(R)|clock_BUFGP       |   0.000|
+anodes<3>   |    8.905(R)|clock_BUFGP       |   0.000|
+saida<0>    |   11.535(R)|clock_BUFGP       |   0.000|
+saida<1>    |   11.391(R)|clock_BUFGP       |   0.000|
+saida<2>    |   11.371(R)|clock_BUFGP       |   0.000|
+saida<3>    |   11.821(R)|clock_BUFGP       |   0.000|
+saida<4>    |   11.000(R)|clock_BUFGP       |   0.000|
+saida<5>    |   11.444(R)|clock_BUFGP       |   0.000|
+saida<6>    |   10.526(R)|clock_BUFGP       |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clock
@@ -70,18 +70,18 @@ Clock to Setup on destination clock clock
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clock          |    5.379|         |         |         |
+clock          |    5.408|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Jun 19 22:15:05 2019 
+Analysis completed Fri Jun 21 00:53:42 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 208 MB
+Peak Memory Usage: 4500 MB
 
 
 

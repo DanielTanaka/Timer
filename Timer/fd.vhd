@@ -73,7 +73,6 @@ architecture arquitetura of fd is
 	signal saida4 : std_logic_vector(6 downto 0);
 	
 begin
-	--MAKE SURE IT WORKS.
 	div: divclock port map(clock, reset, enableCont, clockdiv);
 	
 	contadA : contador port map(clockdiv, reset, enableCont, cont1, rcoA);
@@ -91,6 +90,6 @@ begin
 	hexa3 : hex7seg port map(cont3, saida3);
 	hexa4 : hex7seg port map(cont4, saida4);
 	
-	mux : display port map(clock, saida4, saida3, saida2, saida1, saida, anodes);
+	mux : display port map(clock, saida1, saida2, saida3, saida4, saida, anodes);
 end arquitetura;
 

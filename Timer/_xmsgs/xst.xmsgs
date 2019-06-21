@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/RA00184038/Documents/Timer/Timer/mux.vhd</arg>&quot; line <arg fmt="%d" index="2">44</arg>: Mux is complete : default of case is discarded
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/mux.vhd</arg>&quot; line <arg fmt="%d" index="2">44</arg>: Mux is complete : default of case is discarded
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/RA00184038/Documents/Timer/Timer/mux.vhd</arg>&quot; line <arg fmt="%d" index="2">37</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/mux.vhd</arg>&quot; line <arg fmt="%d" index="2">37</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;entrada0&gt;, &lt;entrada1&gt;, &lt;entrada2&gt;, &lt;entrada3&gt;</arg>
 </msg>
 

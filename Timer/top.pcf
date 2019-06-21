@@ -1,8 +1,14 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Jun 19 22:14:56 2019
+// Written by: Map P.20131013 on Fri Jun 21 00:53:19 2019
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "saida<3>" LOCATE = SITE "N11" LEVEL 1;
+COMP "saida<4>" LOCATE = SITE "P12" LEVEL 1;
+COMP "saida<5>" LOCATE = SITE "L13" LEVEL 1;
+COMP "saida<6>" LOCATE = SITE "M12" LEVEL 1;
+COMP "anodes<0>" LOCATE = SITE "K14" LEVEL 1;
+COMP "anodes<1>" LOCATE = SITE "M13" LEVEL 1;
 COMP "anodes<2>" LOCATE = SITE "J12" LEVEL 1;
 COMP "anodes<3>" LOCATE = SITE "F12" LEVEL 1;
 COMP "start" LOCATE = SITE "C11" LEVEL 1;
@@ -12,11 +18,5 @@ COMP "saida<0>" LOCATE = SITE "L14" LEVEL 1;
 COMP "saida<1>" LOCATE = SITE "H12" LEVEL 1;
 COMP "saida<2>" LOCATE = SITE "N14" LEVEL 1;
 NET "clock_BUFGP/IBUFG" BEL "clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
-COMP "saida<3>" LOCATE = SITE "N11" LEVEL 1;
-COMP "saida<4>" LOCATE = SITE "P12" LEVEL 1;
-COMP "saida<5>" LOCATE = SITE "L13" LEVEL 1;
-COMP "saida<6>" LOCATE = SITE "M12" LEVEL 1;
-COMP "anodes<0>" LOCATE = SITE "K14" LEVEL 1;
-COMP "anodes<1>" LOCATE = SITE "M13" LEVEL 1;
 SCHEMATIC END;
 

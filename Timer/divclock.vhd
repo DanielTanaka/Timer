@@ -27,7 +27,7 @@ begin
 		if enable = '1' then
 			IQ <= IQ + 1; --Incremento do IQ. Contador
 			
-			if IQ = 25000000 then --Contagem demora 0.5 seg. Cada onda dura 0.5s devido freq da placa de 50MHz
+			if IQ = 250000 then --Contagem demora 0.5 seg. Cada onda dura 0.5s devido freq da placa de 50MHz
 				pivo <= not(pivo); --Resetar o PIVO
 				IQ   <= (others => '0'); --Resetar o array com zeros
 			end if;

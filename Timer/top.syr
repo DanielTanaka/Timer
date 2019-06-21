@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
  
 --> Reading design: top.prj
 
@@ -104,21 +104,22 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/RA00184038/Documents/Timer/Timer/divclock.vhd" in Library work.
-Architecture exemplo of Entity divclock is up to date.
-Compiling vhdl file "C:/Users/RA00184038/Documents/Timer/Timer/contador.vhd" in Library work.
+Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/divclock.vhd" in Library work.
+Entity <divclock> compiled.
+Entity <divclock> (Architecture <exemplo>) compiled.
+Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/contador.vhd" in Library work.
 Architecture behavioral of Entity contador is up to date.
-Compiling vhdl file "C:/Users/RA00184038/Documents/Timer/Timer/contadorcinco.vhd" in Library work.
+Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/contadorcinco.vhd" in Library work.
 Architecture behavioral of Entity contadorcinco is up to date.
-Compiling vhdl file "C:/Users/RA00184038/Documents/Timer/Timer/hex7seg.vhd" in Library work.
+Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/hex7seg.vhd" in Library work.
 Architecture exemplo of Entity hex7seg is up to date.
-Compiling vhdl file "C:/Users/RA00184038/Documents/Timer/Timer/mux.vhd" in Library work.
+Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/mux.vhd" in Library work.
 Architecture behavioral of Entity display is up to date.
-Compiling vhdl file "C:/Users/RA00184038/Documents/Timer/Timer/unidControle.vhd" in Library work.
+Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/unidControle.vhd" in Library work.
 Architecture behavioral of Entity unidcontrole is up to date.
-Compiling vhdl file "C:/Users/RA00184038/Documents/Timer/Timer/fd.vhd" in Library work.
+Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/fd.vhd" in Library work.
 Architecture arquitetura of Entity fd is up to date.
-Compiling vhdl file "C:/Users/RA00184038/Documents/Timer/Timer/top.vhd" in Library work.
+Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/top.vhd" in Library work.
 Architecture behavioral of Entity top is up to date.
 
 =========================================================================
@@ -166,8 +167,8 @@ Analyzing Entity <hex7seg> in library <work> (Architecture <exemplo>).
 Entity <hex7seg> analyzed. Unit <hex7seg> generated.
 
 Analyzing Entity <display> in library <work> (Architecture <behavioral>).
-INFO:Xst:1561 - "C:/Users/RA00184038/Documents/Timer/Timer/mux.vhd" line 44: Mux is complete : default of case is discarded
-WARNING:Xst:819 - "C:/Users/RA00184038/Documents/Timer/Timer/mux.vhd" line 37: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+INFO:Xst:1561 - "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/mux.vhd" line 44: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/mux.vhd" line 37: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <entrada0>, <entrada1>, <entrada2>, <entrada3>
 Entity <display> analyzed. Unit <display> generated.
 
@@ -179,7 +180,7 @@ Entity <display> analyzed. Unit <display> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <unidControle>.
-    Related source file is "C:/Users/RA00184038/Documents/Timer/Timer/unidControle.vhd".
+    Related source file is "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/unidControle.vhd".
     Found finite state machine <FSM_0> for signal <estado>.
     -----------------------------------------------------------------------
     | States             | 3                                              |
@@ -200,7 +201,7 @@ Unit <unidControle> synthesized.
 
 
 Synthesizing Unit <divclock>.
-    Related source file is "C:/Users/RA00184038/Documents/Timer/Timer/divclock.vhd".
+    Related source file is "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/divclock.vhd".
     Found 25-bit up counter for signal <IQ>.
     Found 1-bit register for signal <pivo>.
     Summary:
@@ -210,7 +211,7 @@ Unit <divclock> synthesized.
 
 
 Synthesizing Unit <contador>.
-    Related source file is "C:/Users/RA00184038/Documents/Timer/Timer/contador.vhd".
+    Related source file is "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/contador.vhd".
     Found 4-bit down counter for signal <R>.
     Summary:
 	inferred   1 Counter(s).
@@ -218,7 +219,7 @@ Unit <contador> synthesized.
 
 
 Synthesizing Unit <contadorcinco>.
-    Related source file is "C:/Users/RA00184038/Documents/Timer/Timer/contadorcinco.vhd".
+    Related source file is "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/contadorcinco.vhd".
     Found 4-bit down counter for signal <R>.
     Summary:
 	inferred   1 Counter(s).
@@ -226,7 +227,7 @@ Unit <contadorcinco> synthesized.
 
 
 Synthesizing Unit <hex7seg>.
-    Related source file is "C:/Users/RA00184038/Documents/Timer/Timer/hex7seg.vhd".
+    Related source file is "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/hex7seg.vhd".
     Found 16x7-bit ROM for signal <display>.
     Summary:
 	inferred   1 ROM(s).
@@ -234,7 +235,7 @@ Unit <hex7seg> synthesized.
 
 
 Synthesizing Unit <display>.
-    Related source file is "C:/Users/RA00184038/Documents/Timer/Timer/mux.vhd".
+    Related source file is "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/mux.vhd".
 WARNING:Xst:653 - Signal <prescaler> is used but never assigned. This sourceless signal will be automatically connected to value 11000011010100000.
     Found 2-bit up counter for signal <counter>.
     Found 17-bit up counter for signal <prescaler_counter>.
@@ -246,13 +247,13 @@ Unit <display> synthesized.
 
 
 Synthesizing Unit <fd>.
-    Related source file is "C:/Users/RA00184038/Documents/Timer/Timer/fd.vhd".
+    Related source file is "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/fd.vhd".
 WARNING:Xst:646 - Signal <rcoD> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <fd> synthesized.
 
 
 Synthesizing Unit <top>.
-    Related source file is "C:/Users/RA00184038/Documents/Timer/Timer/top.vhd".
+    Related source file is "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/top.vhd".
 Unit <top> synthesized.
 
 
@@ -367,8 +368,8 @@ Cell Usage :
 #      LUT1                        : 40
 #      LUT2                        : 34
 #      LUT2_L                      : 1
-#      LUT3                        : 2
-#      LUT4                        : 57
+#      LUT3                        : 16
+#      LUT4                        : 43
 #      MUXCY                       : 52
 #      MUXF5                       : 14
 #      VCC                         : 1
@@ -391,7 +392,7 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                       79  out of    960     8%  
+ Number of Slices:                       75  out of    960     7%  
  Number of Slice Flip Flops:             61  out of   1920     3%  
  Number of 4 input LUTs:                144  out of   1920     7%  
  Number of IOs:                          14
@@ -438,7 +439,7 @@ Speed Grade: -4
 
    Minimum period: 6.911ns (Maximum Frequency: 144.697MHz)
    Minimum input arrival time before clock: 2.825ns
-   Maximum output required time after clock: 7.625ns
+   Maximum output required time after clock: 7.647ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -521,9 +522,9 @@ Offset:              2.825ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
-  Total number of paths / destination ports: 36 / 11
+  Total number of paths / destination ports: 29 / 11
 -------------------------------------------------------------------------
-Offset:              7.625ns (Levels of Logic = 3)
+Offset:              7.310ns (Levels of Logic = 3)
   Source:            fluxoDados/mux/counter_1 (FF)
   Destination:       saida<6> (PAD)
   Source Clock:      clock rising
@@ -532,45 +533,45 @@ Offset:              7.625ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             26   0.591   1.435  fluxoDados/mux/counter_1 (fluxoDados/mux/counter_1)
-     LUT4:I0->O            1   0.704   0.499  fluxoDados/mux/sevenseg<4>9 (fluxoDados/mux/sevenseg<4>9)
-     LUT4:I1->O            1   0.704   0.420  fluxoDados/mux/sevenseg<4>213 (saida_4_OBUF)
-     OBUF:I->O                 3.272          saida_4_OBUF (saida<4>)
+     FDE:C->Q             19   0.591   1.085  fluxoDados/mux/counter_1 (fluxoDados/mux/counter_1)
+     MUXF5:S->O            1   0.739   0.499  fluxoDados/mux/sevenseg<2>165 (fluxoDados/mux/sevenseg<2>165)
+     LUT3:I1->O            1   0.704   0.420  fluxoDados/mux/sevenseg<2>197 (saida_2_OBUF)
+     OBUF:I->O                 3.272          saida_2_OBUF (saida<2>)
     ----------------------------------------
-    Total                      7.625ns (5.271ns logic, 2.354ns route)
-                                       (69.1% logic, 30.9% route)
+    Total                      7.310ns (5.306ns logic, 2.004ns route)
+                                       (72.6% logic, 27.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'fluxoDados/div/pivo'
   Total number of paths / destination ports: 105 / 7
 -------------------------------------------------------------------------
-Offset:              7.619ns (Levels of Logic = 4)
-  Source:            fluxoDados/contadB/R_1 (FF)
-  Destination:       saida<2> (PAD)
+Offset:              7.647ns (Levels of Logic = 4)
+  Source:            fluxoDados/contadB/R_0 (FF)
+  Destination:       saida<3> (PAD)
   Source Clock:      fluxoDados/div/pivo rising
 
-  Data Path: fluxoDados/contadB/R_1 to saida<2>
+  Data Path: fluxoDados/contadB/R_0 to saida<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            11   0.591   1.108  fluxoDados/contadB/R_1 (fluxoDados/contadB/R_1)
-     LUT4:I0->O            1   0.704   0.000  fluxoDados/mux/sevenseg<2>321 (fluxoDados/mux/sevenseg<2>321)
-     MUXF5:I0->O           1   0.321   0.499  fluxoDados/mux/sevenseg<2>32_f5 (fluxoDados/mux/sevenseg<2>32)
-     LUT4:I1->O            1   0.704   0.420  fluxoDados/mux/sevenseg<2>201 (saida_2_OBUF)
-     OBUF:I->O                 3.272          saida_2_OBUF (saida<2>)
+     FDPE:C->Q            12   0.591   1.136  fluxoDados/contadB/R_0 (fluxoDados/contadB/R_0)
+     LUT4:I0->O            1   0.704   0.000  fluxoDados/mux/sevenseg<3>310_G (N53)
+     MUXF5:I1->O           1   0.321   0.499  fluxoDados/mux/sevenseg<3>310 (fluxoDados/mux/sevenseg<3>310)
+     LUT3:I1->O            1   0.704   0.420  fluxoDados/mux/sevenseg<3>339 (saida_3_OBUF)
+     OBUF:I->O                 3.272          saida_3_OBUF (saida<3>)
     ----------------------------------------
-    Total                      7.619ns (5.592ns logic, 2.027ns route)
-                                       (73.4% logic, 26.6% route)
+    Total                      7.647ns (5.592ns logic, 2.055ns route)
+                                       (73.1% logic, 26.9% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.65 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.39 secs
  
 --> 
 
-Total memory usage is 356772 kilobytes
+Total memory usage is 4487556 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    7 (   0 filtered)

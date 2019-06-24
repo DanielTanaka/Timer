@@ -86,6 +86,7 @@ begin
 	expressionC <= enableCont and rcoA and rcoB and rcoC;
 	
 	contadD : contadorcinco port map(clockdiv, reset, expressionC, cont4, rcoD);
+	
 	hexa1 : hex7seg port map(cont1, saida1);
 	hexa2 : hex7seg port map(cont2, saida2);
 	hexa3 : hex7seg port map(cont3, saida3);

@@ -5,6 +5,30 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_7&quot; will remain.  System error message is:  File exists
+</msg>
+
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_8&quot; will remain.  System error message is:  File exists
+</msg>
+
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_9&quot; will remain.  System error message is:  File exists
+</msg>
+
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_10&quot; will remain.  System error message is:  File exists
+</msg>
+
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_11&quot; will remain.  System error message is:  File exists
+</msg>
+
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_12&quot; will remain.  System error message is:  File exists
+</msg>
+
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_13&quot; will remain.  System error message is:  File exists
+</msg>
+
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_14&quot; will remain.  System error message is:  File exists
+</msg>
+
 <msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/mux.vhd</arg>&quot; line <arg fmt="%d" index="2">44</arg>: Mux is complete : default of case is discarded
 </msg>
 

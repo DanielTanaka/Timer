@@ -16,7 +16,7 @@ architecture Behavioral of unidControle is
 
 begin
 
-	process (clock, reset, estado, start, final_cont) --FINAL STATE
+	process (clock, reset, estado, start, final_cont)
 	begin
 	
 	if reset = '1' then
@@ -25,34 +25,27 @@ begin
 	elsif (clock'event and clock = '1') then
 		case estado is
 			when inicial =>
-				if start = '1' then -- 0
+				if start = '1' then
 					estado <= contagem;
-				 --else
-					--estado <= inicial;
 				end if;
 				
 			when contagem =>
-				
-				if start = '0' then
-					estado <= contagem;
-				--while (start = '0') loop
-				--	estado <= contagem;
-				--if start = '1' then
-					--end loop;
-				--if start = '1' then 
-				--	estado <= contagem;
-				else
+				if start = '1' then
 					estado <= pause;
+				else
+					estado <= contagem;
 				end if;
 				if final_cont = '1' then
 					estado <= final;
-				end if;	
+				end if;
+				
 			when pause =>
 				if start = '0' then
 					estado <= pause;
 				else
 					estado <= contagem;
 				end if;
+				
 			when final =>
 				estado <= final;
 		end case;
@@ -64,9 +57,5 @@ begin
 		'1' when contagem,
 		'0' when others;
 		
---	with estado select enReg <=
---		'1' when carrega,
---		'0' when others;
-
 end Behavioral;
 

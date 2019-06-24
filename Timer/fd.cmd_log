@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/fd.xst" -ofn "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/fd.syr" 

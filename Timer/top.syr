@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.39 secs
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.47 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.40 secs
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.48 secs
  
 --> Reading design: top.prj
 
@@ -106,21 +106,29 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/divclock.vhd" in Library work.
 Architecture exemplo of Entity divclock is up to date.
+ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_7" will remain.  System error message is:  File exists
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/contador.vhd" in Library work.
 Architecture behavioral of Entity contador is up to date.
+ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_8" will remain.  System error message is:  File exists
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/contadorcinco.vhd" in Library work.
 Architecture behavioral of Entity contadorcinco is up to date.
+ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_9" will remain.  System error message is:  File exists
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/hex7seg.vhd" in Library work.
 Architecture exemplo of Entity hex7seg is up to date.
+ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_10" will remain.  System error message is:  File exists
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/mux.vhd" in Library work.
 Architecture behavioral of Entity display is up to date.
+ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_11" will remain.  System error message is:  File exists
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/unidControle.vhd" in Library work.
 Entity <unidcontrole> compiled.
 Entity <unidcontrole> (Architecture <behavioral>) compiled.
+ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_12" will remain.  System error message is:  File exists
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/fd.vhd" in Library work.
 Architecture arquitetura of Entity fd is up to date.
+ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_13" will remain.  System error message is:  File exists
 Compiling vhdl file "D:/Documentos/PUC-SP/01-2019/DSD/Timer/Timer/top.vhd" in Library work.
 Architecture behavioral of Entity top is up to date.
+ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\xst\work\xil_17512_14" will remain.  System error message is:  File exists
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -567,14 +575,14 @@ Offset:              7.686ns (Levels of Logic = 4)
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.68 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.45 secs
  
 --> 
 
-Total memory usage is 4487532 kilobytes
+Total memory usage is 4487556 kilobytes
 
-Number of errors   :    0 (   0 filtered)
+Number of errors   :    8 (   0 filtered)
 Number of warnings :    6 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

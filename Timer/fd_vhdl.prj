@@ -1,0 +1,6 @@
+vhdl work "D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\mux.vhd"
+vhdl work "D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\hex7seg.vhd"
+vhdl work "D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\divclock.vhd"
+vhdl work "D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\contadorcinco.vhd"
+vhdl work "D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\contador.vhd"
+vhdl work "D:\Documentos\PUC-SP\01-2019\DSD\Timer\Timer\fd.vhd"

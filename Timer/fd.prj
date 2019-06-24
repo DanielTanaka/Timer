@@ -1,0 +1,6 @@
+vhdl work "mux.vhd"
+vhdl work "hex7seg.vhd"
+vhdl work "divclock.vhd"
+vhdl work "contadorcinco.vhd"
+vhdl work "contador.vhd"
+vhdl work "fd.vhd"
